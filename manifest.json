@@ -1,0 +1,20 @@
+{
+    "name": "Basic Budget",
+    "short_name": "Basic Budget",
+    "start_url": "/basic-budget/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0d47a1",
+    "icons": [
+        {
+            "src": "/assets/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

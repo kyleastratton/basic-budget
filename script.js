@@ -272,7 +272,7 @@ function importData(e) {
 
 // Clear data
 function clearData() {
-    if (confirm("Are you sure you want to delete all aved date? This action cannot be undone.")) {
+    if (confirm("Are you sure you want to delete all saved date? This action cannot be undone.")) {
         localStorage.clear();
         localStorage.reload();
     }
@@ -323,16 +323,3 @@ function setupPWA() {
 
 // Initialize the app
 init();
-
-// Service Worker Registration
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-        .then((registration) => {
-            console.log('SW registered: ', registration);
-        })
-        .catch((registrationError) => {
-            console.log('SW registration failed: ', registrationError);
-        });
-    });
-}
